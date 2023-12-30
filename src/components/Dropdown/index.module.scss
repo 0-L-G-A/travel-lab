@@ -1,0 +1,79 @@
+@import '@/styles/_mixins.scss';
+
+.opened {
+  --rotation: rotate(180deg);
+  --list-dsp: block
+}
+.closed {
+  --rotation: rotate(0deg);
+  --list-dsp: none
+}
+
+.select {
+  position: absolute;
+  margin-left: -1000000px;
+  visibility: hidden;
+}
+
+.dropDown {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .marker {
+    transform: var(--rotation);
+  }
+
+  .list {
+    display: var(--list-dsp);
+    width: 256px;
+    position: absolute;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: #FFF;
+    margin-top: 180px;
+    box-sizing: border-box;
+    
+    &:not(:last-of-type) {
+      margin-bottom: 8px;
+    }
+
+    .listItem {
+      width: 100%;
+      box-sizing: border-box;
+
+      .divider {
+        width: 192px;
+        height: 1px;
+        margin: 0 auto;
+        background-color: transparent;
+      }
+
+      &:not(:last-of-type) {
+        .divider {
+          background-color: #F5F8FF;
+        }
+      }
+
+      &:hover {
+        .divider {
+          background-color: transparent;
+        }
+      }
+
+      .itemInfo {
+        @include flex-yCenter-gap(8px);
+        width: 192px;
+        border-radius: 20px;
+        padding: 8px 24px 8px 16px;
+        &:hover {
+          background-color: #F5F8FF;
+        }
+      }
+    }
+  }
+}

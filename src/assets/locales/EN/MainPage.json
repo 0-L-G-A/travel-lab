@@ -1,0 +1,145 @@
+{
+  "NAVIGATION": {
+    "TRIPS": "Trips",
+    "PRICES": "Prices",
+    "ABOUT_US": "About us",
+    "CONTACT": "Contact",
+    "VIEW_PROTOCOL": "View Protocol",
+    "GET_STARTED": "Get Started",
+    "MY_PROTOCOLS": "My Protocols"
+  },
+  "BUTTONS": {
+    "FREE_TRIAL": "Start free trial",
+    "GET_STARTED": "Get Started",
+    "LOG_IN_GOOGLE": "Log In with Google",
+    "LOG_IN_APPLE": "Sign up with Apple",
+    "PASSWORD_RESET_LINK": "Send password reset link",
+    "NEW_PASSWORD": "Create new password"
+  },
+  "TAGS": {
+    "DRIVER_APP": "Driver app"
+  },
+  "LABELS": {
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "NEW_PASSWORD": "Create new password",
+    "CONFIRM_NEW_PASSWORD": "Confirm new password"
+  },
+  "PLACEHOLDERS": {
+    "EMAIL": "Enter you email",
+    "PASSWORD": "Enter your password",
+    "CONFIRM_PASSWORD": "Confirm your password"
+  },
+  "AUTH": {
+    "SIGN_IN": {
+      "TITLE": "Welcome Back!",
+      "DESCRIPTION": "Log in to Transfery for Teams",
+      "PASSWORD_FORGOT": "Forgot your password?",
+      "NO_ACCOUNT": "Don't have an account yet? Sign Up"
+    },
+    "SIGN_UP": {
+      "TITLE": "Sing up to Transfery for Teams",
+      "ACCOUNT_EXIST": "Already have an account? Log In"
+    },
+    "FORGOT_PASSWORD": {
+      "TITLE": "Forgot password",
+      "DESCRIPTION": "Enter your email address below. If a Transfery account exists for this address, well send an email with a password reset link.",
+      "NO_ACCOUNT": "Sing up instead"
+    },
+    "PASSWORD_RECOVERY": {
+      "TITLE": "Create new password",
+      "DESCRIPTION": "Please create your new password."
+    },
+    "TEXT_CAROUSEL": {
+      "OPTION_1": "\"I forgot to create our daily route before leaving work today. I managed to do it in minutes on the go. Great product, even from a mobile device.\"",
+      "OPTION_2": "\"Very easy to use. Transfery for Teams has the most accurate navigation of any routing software I’ve ever tried.\"",
+      "OPTION_3": "\"We tried Trancfery because of its free trial, and everything just worked for us. There was no reason to check any other optimization tool.\""
+    }
+  },
+  "HOME_PAGE": {
+    "TITLE": "Your perfect travel",
+    "DESCRIPTION": "So busy to plan vacation, corporate or even school excursion? We can prepare everything instead of you.",
+    "INPUT_PLACEHOLDER": "Enter your email",
+    "CONTACT_ME": "Please, contact me",
+    "CLIENTS_JOINED": "1200 clients monthly"
+  },
+  "CORPORATE_PARTNERS_BLOCK": "Trusted by the biggest companies",
+  "OUR_SERVICES": {
+    "TITLE": "We propose",
+    "ACTIVITY_BLOCK": {
+      "TITLE": "Easy communication",
+      "DESCRIPTION": "Our employees is open-minded, creative and friendly"
+    },
+    "SWAP_BLOCK": {
+      "TITLE": "Customize your events",
+      "DESCRIPTION": "You can customize your event or travel on the planning stage"
+    },
+    "SEND_BLOCK": {
+      "TITLE": "Get instant updates",
+      "DESCRIPTION": "We always keep up to date our cliens with real-time notifications"
+    },
+    "CATEGORY_BLOCK": {
+      "TITLE": "IOS & Android compatible",
+      "DESCRIPTION": "We have mobile app and you can follow for all updates"
+    },
+    "EDIT_BLOCK": {
+      "TITLE": "Choose your team",
+      "DESCRIPTION": "You can choose animators, managers, drivers and other staff"
+    },
+    "CALENDAR_BLOCK": {
+      "TITLE": "Flexibility",
+      "DESCRIPTION": "Choose your perfect time and feel comfortable with us"
+    }
+  },
+  "HOW_IT_WORKS_BLOCK": {
+    "TITLE": "How does it work?",
+    "DESCRIPTION": "Synchronized delivery software for dispatchers and drivers",
+    "DATA_DELIVERY": {
+      "TITLE": "Automatically import delivery data",
+      "DESCRIPTION": "Dispatchers or drivers can add the info required to create a route. Submit complex or simplified route data depending on your needs"
+    }
+  },
+  "PRICE_BLOCK": {
+    "TITLE": "Choose your option",
+    "DESCRIPTION": "Simple pricing that scales with the size of your fleet",
+    "ESSENTIALS": {
+      "TITLE": "Essentials",
+      "DESCRIPTION": "Perfect for some days travels, excursions and some hours events."
+    },
+    "STANDARD": {
+      "TITLE": "Standard",
+      "DESCRIPTION": "Comfy case for middle events and travels."
+    },
+    "PRO": {
+      "TITLE": "Pro",
+      "DESCRIPTION": "Luxury events and travels like honeymoon, wedding or your child prom."
+    },
+    "BENEFITS": {
+      "ROUTES": "Max 10 person and up to 3 days",
+      "TRACK_DRIVERS": "Max 50 person and up to week events",
+      "PROOF_OF_DELIVERY": "Any limits",
+      "CUSTOMER_NOTIFICATIONS": "Personal event manager"
+    }
+  },
+  "CUSTOMER_REVIEWS": {
+    "TITLE": "Explore Customer Reviews",
+    "DESCRIPTION": ""
+  },
+  "HELP_BLOCK": {
+    "TITLE": "HELP & FAQS",
+    "DESCRIPTION": "Everything you need to know about Circuit for Teams",
+    "QUESTIONS": {
+      "FREE_TRIAL_OFFER": "Can I mix company and my staff to save money?",
+      "FREE_TRIAL_OFFER_ANSWER": "Yes! It's real.",
+      "TRANSFERY_FOR_TEAMS": "Can I have free short consultation to investigate company's offers?",
+      "TRANSFERY_FOR_TEAMS_ANSWER": "Please, contact our administration and plan call with manager."
+    }
+  },
+  "DIGITAL_DISPOSITION": {
+    "TITLE": "Digital disposition",
+    "DESCRIPTION": "Create, combine and distribute your orders with just a few clicks! The driver is automatically notified by email and can log the order directly in the app."
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Transfery. All rights reserved. ©2023"
+  }
+}

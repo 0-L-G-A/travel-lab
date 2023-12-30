@@ -1,0 +1,55 @@
+@import '@/styles/_mixins.scss';
+
+.default {
+  --left-order: 1;
+  --right-order: 2;
+  --margin-right: -240px;
+}
+.mirrored {
+  --left-order: 2;
+  --right-order: 1;
+  --margin-right: 0;
+}
+
+.contentCard {
+  @include flex-yCenter-gap(150px);
+  @include mx-width(1620px);
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 80px;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  .cardLeft {
+    order: var(--left-order);
+
+    .tag{
+      margin-bottom: 17px;
+    }
+
+    .title {
+      @include mx-width(391px);
+      @include font-props(1.667vw, 600, var(--additional-color-dark-400));
+      text-transform: uppercase;
+      margin-bottom: 27px;
+    }
+    .description {
+      @include font-props(1.25vw, 500, var(--primary-color-gray-500));
+    }
+  }
+  .cardRight {
+    position: relative;
+    order: var(--right-order);
+    margin-right: var(--margin-right);
+
+    .image {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contentCard {
+    gap: 90px;
+  }
+}

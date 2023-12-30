@@ -1,0 +1,181 @@
+{
+  "NAVIGATION": {
+    "TRIPS": "",
+    "PRICES": "Preise",
+    "ABOUT_US": "Über uns",
+    "CONTACT": "Kontakt",
+    "VIEW_PROTOCOL": "Protokoll anzeigen",
+    "GET_STARTED": "Jetzt loslegen",
+    "MY_PROTOCOLS": "Meine Protokolle"
+  },
+  "BUTTONS": {
+    "FREE_TRIAL": "Kostenlose Testversion starten",
+    "GET_STARTED": "Jetzt loslegen",
+    "LOG_IN_GOOGLE": "Mit Google anmelden",
+    "LOG_IN_APPLE": "Mit Apple anmelden",
+    "PASSWORD_RESET_LINK": "Link zum Zurücksetzen des Passworts senden",
+    "NEW_PASSWORD": "Neues Passwort erstellen"
+  },
+  "TAGS": {
+    "DRIVER_APP": "Fahrer-App"
+  },
+  "LABELS": {
+    "EMAIL": "E-Mail",
+    "PASSWORD": "Passwort",
+    "NEW_PASSWORD": "Neues Passwort erstellen",
+    "CONFIRM_NEW_PASSWORD": "Neues Passwort bestätigen"
+  },
+  "PLACEHOLDERS": {
+    "EMAIL": "Geben Sie Ihre E-Mail ein",
+    "PASSWORD": "Geben Sie Ihr Passwort ein",
+    "CONFIRM_PASSWORD": "Bestätigen Sie Ihr Passwort"
+  },
+  "AUTH": {
+    "SIGN_IN": {
+      "TITLE": "Willkommen zurück!",
+      "DESCRIPTION": "Melden Sie sich bei Transfery für Teams an",
+      "PASSWORD_FORGOT": "Passwort vergessen?",
+      "NO_ACCOUNT": "Haben Sie noch kein Konto? Registrieren Sie sich"
+    },
+    "SIGN_UP": {
+      "TITLE": "Registrieren Sie sich bei Transfery für Teams",
+      "ACCOUNT_EXIST": "Haben Sie bereits ein Konto? Einloggen"
+    },
+    "FORGOT_PASSWORD": {
+      "TITLE": "Passwort vergessen",
+      "DESCRIPTION": "Geben Sie unten Ihre E-Mail-Adresse ein. Wenn ein Transfery-Konto für diese Adresse vorhanden ist, senden wir eine E-Mail mit einem Link zum Zurücksetzen des Passworts.",
+      "NO_ACCOUNT": "Stattdessen anmelden"
+    },
+    "PASSWORD_RECOVERY": {
+      "TITLE": "Neues Passwort erstellen",
+      "DESCRIPTION": "Bitte erstellen Sie Ihr neues Passwort."
+    },
+    "TEXT_CAROUSEL": {
+      "OPTION_1": "\"Ich habe vergessen, unsere tägliche Route zu erstellen, bevor ich heute die Arbeit verlassen habe. Ich habe es unterwegs in wenigen Minuten geschafft. Tolles Produkt, auch von einem Mobilgerät aus.\"",
+      "OPTION_2": "\"Sehr einfach zu bedienen. Transfery for Teams hat die genaueste Navigation aller Routenplanungssoftware, die ich je ausprobiert habe.\"",
+      "OPTION_3": "\"Wir haben Trancfery wegen seiner kostenlosen Testversion ausprobiert, und alles hat für uns funktioniert. Es gab keinen Grund, ein anderes Optimierungstool zu überprüfen.\""
+    }
+  },
+  "HOME_PAGE": {
+    "TITLE": "",
+    "DESCRIPTION": "",
+    "INPUT_PLACEHOLDER": "",
+    "CONTACT_ME": "",
+    "CLIENTS_JOINED": ""
+  },
+  "CORPORATE_PARTNERS_BLOCK": "Vertraut von den größten Unternehmen",
+  "OUR_SERVICES": {
+    "TITLE": "",
+    "ACTIVITY_BLOCK": {
+      "TITLE": "Einfacher Betrieb",
+      "DESCRIPTION": "Wechseln Sie mit dem Transfery Customer Portal zum digitalen Frachtführer"
+    },
+    "SWAP_BLOCK": {
+      "TITLE": "Anpassen von Zwischenstopfetails",
+      "DESCRIPTION": "Fügen Sie optimierten Routen einzigartige Anforderungen mit flexiblen Anpassungsoptionen hinzu"
+    },
+    "SEND_BLOCK": {
+      "TITLE": "Sofortige Updates senden",
+      "DESCRIPTION": "Halten Sie Ihre Fahrer und Kunden mit Echtzeitbenachrichtigungen auf dem Laufenden"
+    },
+    "CATEGORY_BLOCK": {
+      "TITLE": "IOS & Android kompatibel",
+      "DESCRIPTION": "Reichhaltige, anpassbare und automatisch generierte Berichte"
+    },
+    "EDIT_BLOCK": {
+      "TITLE": "Live-Routen bearbeiten",
+      "DESCRIPTION": "Ändern Sie schnell und kommunizieren Sie Änderungen an Live-Routen mit minimalem Einfluss"
+    },
+    "CALENDAR_BLOCK": {
+      "TITLE": "Voraus",
+      "DESCRIPTION": "Fortgeschrittenes und automatisiertes Management von Vertrieb, Preisgestaltung, Betrieb und Dokumentation"
+    }
+  },
+  "HOW_IT_WORKS_BLOCK": {
+    "TITLE": "Wie funktioniert es?",
+    "DESCRIPTION": "Synchronisierte Liefersoftware für Disponenten und Fahrer",
+    "DATA_DELIVERY": {
+      "TITLE": "Automatischer Import von Lieferdaten",
+      "DESCRIPTION": "Disponenten oder Fahrer können die für die Erstellung einer Route erforderlichen Informationen hinzufügen. Geben Sie komplexe oder vereinfachte Routendaten abhängig von Ihren Bedürfnissen ein"
+    }
+  },
+  "PRICE_BLOCK": {
+    "TITLE": "Reduzieren Sie Ihre Kosten pro Lieferung",
+    "DESCRIPTION": "Einfache Preisgestaltung, die mit der Größe Ihrer Flotte skaliert",
+    "ESSENTIALS": {
+      "TITLE": "Essentials",
+      "DESCRIPTION": "Für Teams, die nur Routen optimieren und den Fortschritt ihrer Fahrer verfolgen möchten."
+    },
+    "STANDARD": {
+      "TITLE": "Standard",
+      "DESCRIPTION": "Für Teams, die eine Zustellbestätigung und Kundenbenachrichtigungen benötigen."
+    },
+    "PRO": {
+      "TITLE": "Pro",
+      "DESCRIPTION": "Für Teams, die ihre Zustellleistung analysieren und verbessern möchten."
+    },
+    "BENEFITS": {
+      "ROUTES": "Routen erstellen und optimieren",
+      "TRACK_DRIVERS": "Fahrer in Echtzeit verfolgen",
+      "PROOF_OF_DELIVERY": "Zustellbestätigung erfassen",
+      "CUSTOMER_NOTIFICATIONS": "Kundenbenachrichtigungen senden",
+      "DELIVERY_HISTORY": "Zugriff auf unbegrenzte Lieferhistorie"
+    }
+  },
+  "CUSTOMER_REVIEWS": {
+    "TITLE": "Kundenbewertungen erkunden",
+    "DESCRIPTION": ""
+  },
+  "HELP_BLOCK": {
+    "TITLE": "HILFE & FAQS",
+    "DESCRIPTION": "Alles, was Sie über Circuit for Teams wissen müssen",
+    "QUESTIONS": {
+      "FREE_TRIAL_OFFER": "Bieten Sie eine kostenlose Testversion an?",
+      "FREE_TRIAL_OFFER_ANSWER": "Ja! Probieren Sie eine unbegrenzte Version von Transfery for Teams mit einer 14-tägigen kostenlosen Testversion aus. Wir senden Ihnen vor Ablauf Ihres Testzeitraums eine E-Mail-Erinnerung. Stornieren Sie Ihre kostenlose Testversion jederzeit, ohne belastet zu werden, oder lassen Sie Ihre kostenlose Testversion enden und automatisch in ein monatliches Abonnement übergehen. Weitere Informationen zu unseren Plänen finden Sie auf unserer Seite.",
+      "TRANSFERY_FOR_TEAMS": "Ist Transfery for Teams einfach zu bedienen?",
+      "TRANSFERY_FOR_TEAMS_ANSWER": "Ja! Probieren Sie eine unbegrenzte Version von Transfery for Teams mit einer 14-tägigen kostenlosen Testversion aus. Wir senden Ihnen vor Ablauf Ihres Testzeitraums eine E-Mail-Erinnerung. Stornieren Sie Ihre kostenlose Testversion jederzeit, ohne belastet zu werden, oder lassen Sie Ihre kostenlose Testversion enden und automatisch in ein monatliches Abonnement übergehen. Weitere Informationen zu unseren Plänen finden Sie auf unserer Seite."
+    }
+  },
+  "DIGITAL_DISPOSITION": {
+    "TITLE": "Digitale Disposition",
+    "DESCRIPTION": "Erstellen, kombinieren und verteilen Sie Ihre Bestellungen mit nur wenigen Klicks! Der Fahrer wird automatisch per E-Mail benachrichtigt und kann die Bestellung direkt in der App protokollieren."
+  },
+  "FOOTER": {
+    "TITLE": "Wie wir Geld verdienen",
+    "DESCRIPTION": "Wir von Credwise erhalten in einigen Fällen eine Entschädigung von unseren Geschäftspartnern, wenn ein Besucher über einen der gesponserten Links (sogenannte Affiliate-Links), die auf der Website zu sehen sind, eine Bankproduktanfrage stellt (und genehmigt wird). Auch wenn wir eine Provisionszahlung für die Vermarktung von Bankprodukten erhalten, beeinflusst dies nicht die Konditionen, die dem Endkunden angeboten werden.",
+    "PRODUCT_LIST": {
+      "TITLE": "Produkt",
+      "OVERVIEW": "Überblick",
+      "PRICING": "Preise",
+      "FEATURES": "Funktionen",
+      "ROUTE_OPTIMIZATION": "Routenoptimierung",
+      "PROOF_OF_DELIVERY": "Zustellbestätigung",
+      "DELIVERY_ANALYTICS": "Lieferanalyse",
+      "CUSTOMER_NOTIFICATIONS": "Kundenbenachrichtigungen"
+    },
+    "HEADLINE_LIST": {
+      "TITLE": "Überschrift",
+      "PRICE_ONE_THOUSAND": "Låna 1 000 kr ",
+      "PRICE_TEN_THOUSAND": "Låna 10 000 kr ",
+      "PRICE_TWENTY_THOUSAND": "Låna 20 000 kr ",
+      "PRICE_FIFTY_THOUSAND": "Låna 50 000 kr ",
+      "PRICE_ONE_HUNDRED_THOUSAND": "Låna 100 000 kr ",
+      "PRICE_TWO_HUNDRED_THOUSAND": "Låna 200 000 kr ",
+      "PRICE_THREE_HUNDRED_THOUSAND": "Låna 300 000 kr "
+    },
+    "TOOLS_LIST": {
+      "TITLE": "Werkzeuge",
+      "ANDROID_APP": "Android-App",
+      "IOS_APP": "IOS-App",
+      "API": "API"
+    },
+    "CONTACT_LIST": {
+      "TITLE": "Kontaktiere uns",
+      "FIRST_PHONE_NUMBER": "0405671192",
+      "SECOND_PHONE_NUMBER": "11234353-1123",
+      "STREET_ADDRESS": "Kungsgatan 64",
+      "CITY_ADDRESS": "112 10 Stockholm"
+    },
+    "COPYRIGHT": "Transfery. Alle Rechte vorbehalten. ©2023"
+  }
+}

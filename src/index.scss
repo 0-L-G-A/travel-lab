@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import 'styles/mixins';
+
+:root {
+  /* Primary colors */
+  --primary-color-gray-900: #101828;
+  --primary-color-gray-800: #031f3a;
+  --primary-color-gray-700: #344054;
+  --primary-color-gray-600: #475467;
+  --primary-color-gray-500: #667085;
+  --primary-color-gray-400: #98A2B3;
+  --primary-color-gray-300: #D0D5DD;
+  --primary-color-gray-200: #EAECF0;
+  --primary-color-gray-100: #F2F4F7;
+  --primary-color-gray-50: #F8F9FA;
+  --primary-color-gray-20: #FCFCFD;
+
+  --primary-color-error-500: #F04438;
+  --primary-color-error-100: #FEE4E2;
+
+  --primary-color-warning-500: #F79009;
+  --primary-color-warning-100: #FEF0C7;
+
+  --primary-color-success-500: #12B76A;
+  --primary-color-success-100: #D1FADF;
+
+  /* Secondary colors */
+
+  --secondary-color-blue-500: #2E90FA;
+  --secondary-color-blue-100: #D1E9FF;
+
+  --secondary-color-purple-500: #7A5AF8;
+  --secondary-color-purple-100: #EBE9FE;
+
+  --secondary-color-blue-gray-500: #4E5BA6;
+  --secondary-color-blue-gray-100: #EAECF5;
+
+  --secondary-color-pink-500: #EE46BC;
+  --secondary-color-pink-100: #FCE7F6;
+  
+  --secondary-color-selection-red-100: #FECDD6;
+  --secondary-color-selection-pink-25: #FFF5F6;
+  --secondary-color-selection-yellow-25: #FFF9EB;
+  --secondary-color-selection-blue-25: #F5F8FF;
+
+  /* Additional colors */
+
+  --additional-color-dark-950: #000f25;
+  --additional-color-dark-800: #081228;
+  --additional-color-dark-600: #1E1B39;
+  --additional-color-dark-400: #252B42;
+
+  --secondary-color-white: #fff;
+  --transparent-color: rgba($color: #000000, $alpha: 0);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Plus Jakarta Sans;
+}
+
+body {
+  margin: 0;
+  padding: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: visible !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  width: 100%;
+  padding: .5rem 1rem;
+  @include font-props(0.833vw, 500, var(--additional-color-dark-950));
+  border-radius: 20px;
+  border: 1px solid var(--primary-color-gray-200);
+  outline: none;
+  line-height: 24px;
+  &::placeholder {
+    color: var(--primary-color-gray-500);
+  }
+}

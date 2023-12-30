@@ -1,0 +1,43 @@
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carouselItems {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carouselItem {
+  flex: 0 0 100%;
+}
+
+.carouselDots {
+  width: 20%;
+  bottom: 10px;
+  display: flex;
+  margin-left: 0px;
+}
+
+.dot {
+  height: 6px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.active {
+  width: 25px;
+  border-radius: 3px;
+  background-color: var(--additional-color-dark-950);
+}
+
+.inactive {
+  width: 6px;
+  background-color: var(--additional-color-dark-950);
+  opacity: 0.2;
+}

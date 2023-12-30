@@ -1,0 +1,11 @@
+@import '@/styles/_mixins.scss';
+
+.helpWrapper {
+  @include mx-width(1071px);
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 20px;
+  border: 1px solid var(--primary-color-gray-100);
+  box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+}

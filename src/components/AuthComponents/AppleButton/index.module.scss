@@ -1,0 +1,11 @@
+@import '@/styles/_mixins-flex.scss';
+
+.appleButton {
+  @include flex-yCenter-xCenter-gap(1.25rem);
+  border-color: var(--primary-color-gray-100);
+  background-color: var(--primary-color-gray-100);
+  .appleIcon {
+    width: 1.250vw;
+    height: 1.250vw;
+  }
+}

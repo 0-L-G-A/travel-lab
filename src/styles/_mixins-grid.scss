@@ -1,0 +1,17 @@
+@mixin grid-col-eq($quantity, $width) {
+  display: grid;
+  grid-template-columns: repeat($quantity, $width);
+}
+
+@mixin grid-col-eq-gap($quantity, $width, $gap) {
+  display: grid;
+  grid-template-columns: repeat($quantity, $width);
+  gap: $gap;
+}
+
+@mixin grid-col-eq-colgap($quantity, $width, $gap) {
+  display: grid;
+  grid-template-columns: repeat($quantity, $width);
+  column-gap: $gap;
+}
+  

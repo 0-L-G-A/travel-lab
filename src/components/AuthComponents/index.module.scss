@@ -1,0 +1,21 @@
+@import '@/styles/_mixins.scss';
+
+.btn {
+  width: 23.854vw;
+  text-align: center;
+  @include font-props(0.833vw, 600, var(--additional-color-dark-800));
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+}
+.primaryBtn {
+  border-color: var(--primary-color-gray-800);
+  background-color: var(--primary-color-gray-800);
+  color: var(--secondary-color-white);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+

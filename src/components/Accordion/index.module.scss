@@ -1,0 +1,53 @@
+@import '@/styles/_mixins.scss';
+
+.opened {
+  --rotate: rotate(0deg);
+}
+.closed {
+  --rotate: rotate(90deg);
+}
+
+.details {
+  position: absolute;
+  visibility: hidden;
+  left: -10000px;
+}
+
+.accordion {
+  position: relative;
+  @include flex-gap(1.5rem);
+  width: 100%;
+  padding: 1.125rem 1.5rem;
+  box-sizing: border-box;
+  .prefix {
+    @include flex-yStart-xStart()
+  }
+  .content {
+    .label {
+      @include font-props (1.250vw, 500, var(--additional-color-dark-950));
+      margin-bottom: 1rem;
+    }
+    .hiddenContent {
+      @include font-props (0.833vw, 400, var(--primary-color-gray-500));
+    }
+  }
+  .btn {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    .line {
+      position: absolute;
+      height: 1px;
+      width: 16px;
+      background-color: black;
+    }
+    .one {}
+    .two {
+      transform: var(--rotate);
+    }
+  }
+}

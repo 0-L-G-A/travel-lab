@@ -1,0 +1,9 @@
+@import '@/styles/_mixins.scss';
+
+.navBarWrapper {
+  @include flex-rowDir();
+
+  height: 100vh;
+  width: 100vw;
+  padding: 16px;
+}

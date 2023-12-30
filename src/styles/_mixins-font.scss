@@ -1,0 +1,27 @@
+@mixin font-set-up($family, $size, $weight, $col) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: $col;
+}
+
+@mixin font-props($size, $weight, $col) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $col;
+}
+
+@mixin font-size-col($size, $col) {
+  font-size: $size;
+  color: $col;
+}
+
+@mixin font-size-weight($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin font-weight-col($weight, $col) {
+  font-weight: $weight;
+  color: $col;
+}

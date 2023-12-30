@@ -1,0 +1,5 @@
+@import '@/styles/_mixins-font.scss';
+
+.counterPrefix {
+  @include font-props(1.250vw, 500, var(--primary-color-gray-500));
+}

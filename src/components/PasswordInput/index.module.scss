@@ -1,0 +1,17 @@
+.passwordInput {
+  position: relative;
+  .input {
+    border-color: inherit;
+  }
+  .button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    width: 24px;
+    height: 25px;
+    padding: 0 .3125rem;
+    margin-top: -2.0625rem;
+    margin-right: -0.9375rem;
+    right: 0;
+  }
+}

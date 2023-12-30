@@ -1,0 +1,28 @@
+@import '@/styles/_mixins.scss';
+
+.passwordRecovery {
+  .title {
+    @include font-props(1.875vw, 500, var(--additional-color-dark-950));
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .description {
+    @include font-props(1.250vw, 500, var(--primary-color-gray-500));
+    text-align: center;
+  }
+  .form {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    .pwdForgot {
+      @include font-props(0.833vw, 600, var(--additional-color-dark-950));
+      text-align: end;
+    }
+    .inputWrapper {
+      display: block;
+    }
+  }
+  .buttons {
+    margin-top: 2.75rem;
+  }
+}

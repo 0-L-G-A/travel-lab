@@ -1,0 +1,24 @@
+@import '@/styles/_mixins.scss';
+
+.customerReview {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--primary-color-gray-100);
+  .review {
+    @include font-props(0.833vw, 500, var(--primary-color-gray-500));
+    margin-bottom: 1.5rem;
+  }
+  .bottom {
+    @include flex-yCenter-xBetween();
+    .details {
+      .name {
+        @include font-props(1.250vw, 500, var(--additional-color-dark-950));
+      }
+      .company {
+        @include font-props(0.938vw, 500, var(--primary-color-gray-500));
+      }
+    }
+    .rateContainer {
+      @include flex-yCenter();
+    }
+  }
+}

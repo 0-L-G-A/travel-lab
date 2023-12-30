@@ -1,0 +1,29 @@
+@import '@/styles/_mixins.scss';
+
+.error {
+  --visibility: visible;
+}
+.default {
+  --visibility: hidden;
+}
+
+.inputBox {
+  width: 100%;
+  .label {
+    @include font-props(0.833vw, 500, var(--additional-color-dark-950));
+    margin-bottom: .75rem;
+  }
+  .errorMessage {
+    @include font-props(0.625vw, 500, var(--primary-color-error-500));
+    width: 100%;
+    margin-top: .25rem;
+    padding: 0 1rem;
+    visibility: var(--visibility);
+  }
+  .errorInput {
+    border-color: var(--primary-color-error-500);
+  }
+  .defaultInput {
+    border-color: var(--primary-color-gray-200);
+  }
+}

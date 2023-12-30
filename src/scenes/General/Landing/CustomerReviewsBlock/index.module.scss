@@ -1,0 +1,23 @@
+@import '@/styles/_mixins.scss';
+
+.customerReviewsBlock {
+  margin-top: 3.1875rem;
+  .customerReviews {
+    position: relative;
+    padding-top: 3.3125rem;
+    display: grid;
+    grid-template-columns: repeat(2, 38.385vw);
+    column-gap: 5.5rem;
+    row-gap: 2.5rem;
+    justify-content: center;
+    .fader {
+      width: 100%;
+      position: absolute;
+      @include flex-yCenter-xCenter();
+      height: 100px;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,1) 50%);
+      top: 65%;
+    }
+  }
+}

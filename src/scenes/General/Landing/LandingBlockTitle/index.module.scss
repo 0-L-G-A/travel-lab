@@ -1,0 +1,21 @@
+@import '@/styles/_mixins.scss';
+
+.dark {
+  --title-col: var(--secondary-color-white);
+  --desc-col: var(--primary-color-gray-50);
+}
+.light {
+  --title-col: var(--additional-color-dark-950);
+  --desc-col: var(--primary-color-gray-500);
+}
+
+.titleContainer {
+  text-align: center;
+  .title {
+    @include font-props(2.5vw, 500, var(--title-col));
+    margin-bottom: 32px;
+  }
+  .description {
+    @include font-props(0.938vw, 400, var(--desc-col));
+  }
+}

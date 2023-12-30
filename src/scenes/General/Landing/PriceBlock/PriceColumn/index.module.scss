@@ -1,0 +1,76 @@
+@import '@/styles/_mixins.scss';
+
+.priceColumn {
+  position: relative;
+  margin-top: 5.0313rem;
+  @include flex-yCenter-colDir-gap(3rem);
+  @include mx-width(20.104vw);
+  padding: 2.5rem 1.5rem;
+  background-color: var(--secondary-color-white);
+  border-radius: 20px;
+  border: 1px solid var(--primary-color-gray-100);
+  box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  .tag {
+    @include abs-xCenter();
+    margin-top: -3.125rem;
+  }
+  .title {
+    @include font-props(1.667vw, 600, var(--additional-color-dark-950));
+    text-transform: uppercase;
+  }
+  .description {
+    @include font-props(0.833vw, 400, var(--primary-color-gray-500));
+  }
+  .price {
+    @include font-props(1.667vw, 500, var(--additional-color-dark-600));
+  }
+  .btn {
+    @include mx-width(17.604vw);
+    @include font-props(0.833vw, 600, var(--primary-color-gray-800));
+    padding: 0 1.5rem;
+    background-color: var(--primary-color-gray-100);
+    color: var(--primary-color-gray-800);
+    &:hover {
+      background-color: var(--primary-color-gray-200);
+    }
+  }
+  .benefits {
+    .benefit {
+      @include font-props(0.833vw, 500, var(--primary-color-gray-500));
+      &:not(:last-of-type) {
+        margin-bottom: 1.25rem;
+      }
+    }
+  }
+}
+
+.priceColumn {
+  &:nth-of-type(1) {
+    .benefits {
+      .benefit {
+        &:nth-child(n+2):nth-child(-n+4) {
+          text-decoration: line-through;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  &:nth-of-type(2) {
+    .btn {
+      background-color: var(--primary-color-gray-800);
+      color: var(--secondary-color-white);
+      &:hover {
+        background-color: var(--primary-color-gray-700);
+      }
+    }
+    .benefits {
+      .benefit {
+        &:nth-child(n+3):nth-child(-n+4)  {
+          text-decoration: line-through;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
