@@ -17,7 +17,7 @@ jobs:
         node-version: [18]
     defaults:
       run:
-        working-directory: BE
+        working-directory: ./BE
     steps:
       - uses: actions/checkout@v3
 
