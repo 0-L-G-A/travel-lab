@@ -17,11 +17,9 @@ jobs:
         node-version: [18]
     defaults:
       run:
-        working-directory: FE
+        working-directory: ./FE
     steps:
       - uses: actions/checkout@v3
-
-      - uses: npm/action-setup@v2
 
       - name: Use Node.js 
         uses: actions/setup-node@v3
