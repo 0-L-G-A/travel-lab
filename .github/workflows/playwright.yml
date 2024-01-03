@@ -19,10 +19,13 @@ jobs:
         node-version: 18
     - name: Install dependencies
       run: npm ci
+      working-directory: FE
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+      working-directory: FE
     - name: Run Playwright tests
       run: npx playwright test
+      working-directory: FE
     - uses: actions/upload-artifact@v3
       if: always()
       with:
