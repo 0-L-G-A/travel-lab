@@ -1,7 +1,13 @@
 name: Code Quality BE
 on:
+  push:
+    branches: [ master ]
+    paths: 
+        - BE/**
   pull_request:
-    branches: [main]
+    branches: [ master ]
+    paths: 
+        - BE/**
 jobs:
   prettier:
     name: Prettier

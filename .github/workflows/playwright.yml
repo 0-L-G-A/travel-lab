@@ -1,11 +1,11 @@
 name: Run E2E
 on:
   push:
-    branches: [ main, master ]
+    branches: [ master ]
     paths: 
       - FE/**
   pull_request:
-    branches: [ main, master ]
+    branches: [ master ]
     paths: 
       - FE/**
 jobs:
