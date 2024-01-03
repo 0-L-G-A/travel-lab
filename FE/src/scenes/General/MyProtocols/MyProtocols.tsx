@@ -1,9 +1,5 @@
 const MyProtocols = () => {
-  return (
-    <div>
-      My Protocols
-    </div>
-  );
+  return <div>My Protocols</div>;
 };
 
 export default MyProtocols;

@@ -25,12 +25,12 @@ export function removeClassFromChildrenById(parentId: string, className: string)
   var parentElement = document.getElementById(parentId);
 
   if (parentElement) {
-      var children = parentElement.children;
+    var children = parentElement.children;
 
-      for (var i = 0; i < children.length; i++) {
-          children[i].classList.remove(className);
-      }
+    for (var i = 0; i < children.length; i++) {
+      children[i].classList.remove(className);
+    }
   } else {
-      console.error("Parent element with ID '" + parentId + "' not found.");
+    console.error("Parent element with ID '" + parentId + "' not found.");
   }
 }

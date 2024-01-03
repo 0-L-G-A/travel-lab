@@ -41,7 +41,7 @@ export default function PasswordRecovery() {
             errorMessage={errors.password?.message}
           >
             <PasswordInput
-              registerName='password'
+              registerName="password"
               onChange={(e) => setValue('password', e.target.value, { shouldValidate: true })}
               placeholder={t(uiTexts.placeholders.password)}
             />
@@ -53,8 +53,10 @@ export default function PasswordRecovery() {
             errorMessage={errors.confirmPassword?.message}
           >
             <PasswordInput
-              registerName='confirmPassword'
-              onChange={(e) => setValue('confirmPassword', e.target.value, { shouldValidate: true })}
+              registerName="confirmPassword"
+              onChange={(e) =>
+                setValue('confirmPassword', e.target.value, { shouldValidate: true })
+              }
               placeholder={t(uiTexts.placeholders.confirmPassword)}
             />
           </InputBox>

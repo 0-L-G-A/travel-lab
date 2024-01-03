@@ -6,6 +6,6 @@ const AuthRoutesWrapper = () => {
       <Outlet />
     </>
   );
-}
+};
 
 export default AuthRoutesWrapper;

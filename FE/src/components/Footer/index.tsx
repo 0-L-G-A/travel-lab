@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div >
+      <div>
         <p className={styles.copyrightInfo}>{t('FOOTER.COPYRIGHT')}</p>
       </div>
     </>

@@ -1,7 +1,13 @@
 name: Code Quality FE
 on:
+  push:
+    branches: [ master ]
+    paths: 
+        - FE/**
   pull_request:
-    branches: [main]
+    branches: [ master ]
+    paths: 
+        - FE/**
 jobs:
   prettier:
     name: Prettier
@@ -10,12 +16,10 @@ jobs:
       matrix:
         node-version: [18]
     defaults:
-        run:
-            working-directory: FE
+      run:
+        working-directory: ./FE
     steps:
       - uses: actions/checkout@v3
-
-      - uses: npm/action-setup@v2
 
       - name: Use Node.js 
         uses: actions/setup-node@v3

@@ -1,11 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import {
-  ROLES,
-  AdminRoutes,
-  GeneralRoutes,
-  MainAdminRoutes,
-} from 'routes';
+import { ROLES, AdminRoutes, GeneralRoutes, MainAdminRoutes } from 'routes';
 
 import NotFound from 'scenes/General/NotFound/NotFound';
 
@@ -23,9 +18,7 @@ const App = () => {
     <Router>
       <Routes>
         {GeneralRoutes}
-        <Route element={<ProtectedRoutesWrapper loginRequired />}>
-          {routes[role]}
-        </Route>
+        <Route element={<ProtectedRoutesWrapper loginRequired />}>{routes[role]}</Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

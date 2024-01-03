@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ authorized }) => {
       <header className={styles.header}>
         <div className={styles.navigationLeft}>
           <div className={styles.titleLogoDiv}>
-            <img src={TravelLogo} alt="travel+logo" width="100" height="50"/>
+            <img src={TravelLogo} alt="travel+logo" width="100" height="50" />
           </div>
           <nav className={styles.nav}>
             <ul className={styles.navList}>

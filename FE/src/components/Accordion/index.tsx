@@ -38,7 +38,10 @@ export default function Accordion({
         {prefixComponent && <div className={styles.prefix}>{prefixComponent()}</div>}
         <div className={styles.content}>
           <p className={styles.label}>{label}</p>
-          <p className={styles.hiddenContent} style={{ display: animation.display, opacity: animation.opacity }}>
+          <p
+            className={styles.hiddenContent}
+            style={{ display: animation.display, opacity: animation.opacity }}
+          >
             {children}
           </p>
         </div>

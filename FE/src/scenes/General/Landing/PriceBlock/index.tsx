@@ -10,7 +10,7 @@ const columns = ['ESSENTIALS', 'STANDARD', 'PRO'];
 export default function PriceBlock() {
   return (
     <section className={styles.priceBlock}>
-      <LandingBlockTitle theme="dark" titleCode={TitleCodes.PRICE} noDescription/>
+      <LandingBlockTitle theme="dark" titleCode={TitleCodes.PRICE} noDescription />
       <PriceWrapper>
         {columns.map((column, idx) => (
           <PriceColumn

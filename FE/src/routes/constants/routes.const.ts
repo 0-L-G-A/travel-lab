@@ -96,7 +96,7 @@ export const PAGE_TITLES_KEYS = Object.freeze({
   [PAGE_KEYS.availability]: 'Calendar',
 });
 
-export const ROUTES= Object.freeze({
+export const ROUTES = Object.freeze({
   [PAGE_KEYS.landing]: '/',
   [PAGE_KEYS.passwordReset]: '/password-reset',
   [PAGE_KEYS.error]: '*',
@@ -147,8 +147,8 @@ export const ROUTES= Object.freeze({
   [PAGE_KEYS.finishedTours]: '/tour-management/finished',
   [PAGE_KEYS.completedTours]: '/tour-management/completed',
   [PAGE_KEYS.cancelledTours]: '/tour-management/cancelled',
-  [PAGE_KEYS.newAssignedTours]: '/tour-management/new-assigned',      // NEW
-  [PAGE_KEYS.notAssignedTours]: '/tour-management/not-assigned',      // NOT
+  [PAGE_KEYS.newAssignedTours]: '/tour-management/new-assigned', // NEW
+  [PAGE_KEYS.notAssignedTours]: '/tour-management/not-assigned', // NOT
   [PAGE_KEYS.notAcceptedTours]: '/tour-management/not-accepted',
   [PAGE_KEYS.newTour]: '/tour-management/new-tour',
 });

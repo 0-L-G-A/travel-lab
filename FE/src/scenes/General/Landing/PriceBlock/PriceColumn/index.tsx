@@ -7,7 +7,13 @@ import { PriceColumnType } from './index.types';
 
 import styles from './index.module.scss';
 
-export default function PriceColumn({ priceType, tag }: { priceType: PriceColumnType; tag?: string }) {
+export default function PriceColumn({
+  priceType,
+  tag,
+}: {
+  priceType: PriceColumnType;
+  tag?: string;
+}) {
   const { t } = useTranslation();
 
   return (

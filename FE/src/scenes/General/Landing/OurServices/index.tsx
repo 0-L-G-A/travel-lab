@@ -17,45 +17,75 @@ const OurServicesBlock = () => {
         <div className={styles.ourServices}>
           <div className={styles.ourServicesBlock}>
             <div className={styles.ourServicesBlockBackgroundImg}>
-              <img className={styles.ourServicesBlockImage} src={activityIcon} alt="Activity Icon" />
+              <img
+                className={styles.ourServicesBlockImage}
+                src={activityIcon}
+                alt="Activity Icon"
+              />
             </div>
-            <h4 className={styles.ourServicesBlockTitle}>{t('OUR_SERVICES.ACTIVITY_BLOCK.TITLE')}</h4>
-            <p className={styles.ourServicesBlockDescription}>{t('OUR_SERVICES.ACTIVITY_BLOCK.DESCRIPTION')}</p>
+            <h4 className={styles.ourServicesBlockTitle}>
+              {t('OUR_SERVICES.ACTIVITY_BLOCK.TITLE')}
+            </h4>
+            <p className={styles.ourServicesBlockDescription}>
+              {t('OUR_SERVICES.ACTIVITY_BLOCK.DESCRIPTION')}
+            </p>
           </div>
           <div className={styles.ourServicesBlock}>
             <div className={styles.ourServicesBlockBackgroundImg}>
               <img className={styles.ourServicesBlockImage} src={swapIcon} alt="Swap Icon" />
             </div>
             <h4 className={styles.ourServicesBlockTitle}>{t('OUR_SERVICES.SWAP_BLOCK.TITLE')}</h4>
-            <p className={styles.ourServicesBlockDescription}>{t('OUR_SERVICES.SWAP_BLOCK.DESCRIPTION')}</p>
+            <p className={styles.ourServicesBlockDescription}>
+              {t('OUR_SERVICES.SWAP_BLOCK.DESCRIPTION')}
+            </p>
           </div>
           <div className={styles.ourServicesBlock}>
             <div className={styles.ourServicesBlockBackgroundImg}>
               <img className={styles.ourServicesBlockImage} src={sendIcon} alt="Send Icon" />
             </div>
             <h4 className={styles.ourServicesBlockTitle}>{t('OUR_SERVICES.SEND_BLOCK.TITLE')}</h4>
-            <p className={styles.ourServicesBlockDescription}>{t('OUR_SERVICES.SEND_BLOCK.DESCRIPTION')}</p>
+            <p className={styles.ourServicesBlockDescription}>
+              {t('OUR_SERVICES.SEND_BLOCK.DESCRIPTION')}
+            </p>
           </div>
           <div className={styles.ourServicesBlock}>
             <div className={styles.ourServicesBlockBackgroundImg}>
-              <img className={styles.ourServicesBlockImage} src={categoryIcon} alt="Category Icon" />
+              <img
+                className={styles.ourServicesBlockImage}
+                src={categoryIcon}
+                alt="Category Icon"
+              />
             </div>
-            <h4 className={styles.ourServicesBlockTitle}>{t('OUR_SERVICES.CATEGORY_BLOCK.TITLE')}</h4>
-            <p className={styles.ourServicesBlockDescription}>{t('OUR_SERVICES.CATEGORY_BLOCK.DESCRIPTION')}</p>
+            <h4 className={styles.ourServicesBlockTitle}>
+              {t('OUR_SERVICES.CATEGORY_BLOCK.TITLE')}
+            </h4>
+            <p className={styles.ourServicesBlockDescription}>
+              {t('OUR_SERVICES.CATEGORY_BLOCK.DESCRIPTION')}
+            </p>
           </div>
           <div className={styles.ourServicesBlock}>
             <div className={styles.ourServicesBlockBackgroundImg}>
               <img className={styles.ourServicesBlockImage} src={editIcon} alt="Edit Icon" />
             </div>
             <h4 className={styles.ourServicesBlockTitle}>{t('OUR_SERVICES.EDIT_BLOCK.TITLE')}</h4>
-            <p className={styles.ourServicesBlockDescription}>{t('OUR_SERVICES.EDIT_BLOCK.DESCRIPTION')}</p>
+            <p className={styles.ourServicesBlockDescription}>
+              {t('OUR_SERVICES.EDIT_BLOCK.DESCRIPTION')}
+            </p>
           </div>
           <div className={styles.ourServicesBlock}>
             <div className={styles.ourServicesBlockBackgroundImg}>
-              <img className={styles.ourServicesBlockImage} src={calendarIcon} alt="Calendar Icon" />
+              <img
+                className={styles.ourServicesBlockImage}
+                src={calendarIcon}
+                alt="Calendar Icon"
+              />
             </div>
-            <h4 className={styles.ourServicesBlockTitle}>{t('OUR_SERVICES.CALENDAR_BLOCK.TITLE')}</h4>
-            <p className={styles.ourServicesBlockDescription}>{t('OUR_SERVICES.CALENDAR_BLOCK.DESCRIPTION')}</p>
+            <h4 className={styles.ourServicesBlockTitle}>
+              {t('OUR_SERVICES.CALENDAR_BLOCK.TITLE')}
+            </h4>
+            <p className={styles.ourServicesBlockDescription}>
+              {t('OUR_SERVICES.CALENDAR_BLOCK.DESCRIPTION')}
+            </p>
           </div>
         </div>
       </div>

@@ -14,7 +14,9 @@ export default function CustomerReview({ company, customer, rate, review }: ICus
       <div className={styles.bottom}>
         <div className={styles.details}>
           <p className={styles.name}>{`${customer.name} (${customer.occupation})`}</p>
-          <p className={styles.company}>{`${company.country}/${company.workersAmount} people/${company.name}`}</p>
+          <p
+            className={styles.company}
+          >{`${company.country}/${company.workersAmount} people/${company.name}`}</p>
         </div>
         <div className={styles.rateContainer}>
           {rateArr.map((col, idx) => (

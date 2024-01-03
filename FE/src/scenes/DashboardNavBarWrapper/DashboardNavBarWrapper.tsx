@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
-import { NAV_PANEL_CONFIG} from 'routes/constants';
+import { NAV_PANEL_CONFIG } from 'routes/constants';
 
 import NavPanel from 'components/DashboardNavPanel';
 
@@ -13,6 +13,6 @@ const DashboardNavBarWrapper = ({ role = '' }) => {
       <Outlet />
     </div>
   );
-}
+};
 
 export default DashboardNavBarWrapper;

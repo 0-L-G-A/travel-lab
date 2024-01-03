@@ -11,5 +11,5 @@ export default [
     <Route path={ROUTES.tourManagement} Component={ToursList} />
     <Route path={ROUTES.notAssignedTours} Component={ToursList} />
     <Route path={ROUTES.cancelledTours} Component={ToursList} />
-  </Route>
+  </Route>,
 ];

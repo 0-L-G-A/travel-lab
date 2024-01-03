@@ -57,7 +57,7 @@ export default function SignIn() {
             errorMessage={errors.password?.message}
           >
             <PasswordInput
-              registerName='password'
+              registerName="password"
               placeholder={t(uiTexts.placeholders.password)}
               onChange={(e) => setValue('password', e.target.value, { shouldValidate: true })}
             />
