@@ -14,6 +14,6 @@ const Landing = () => {
       <HelpBlock />
     </>
   );
-}
+};
 
 export default Landing;

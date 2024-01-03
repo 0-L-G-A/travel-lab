@@ -4,8 +4,8 @@ import Footer from 'components/Footer';
 import Header from 'components/Header';
 
 type ContextType = {
-  authorized: boolean,
-  role?: string,
+  authorized: boolean;
+  role?: string;
 };
 
 const GuestRoutesWrapper = () => {

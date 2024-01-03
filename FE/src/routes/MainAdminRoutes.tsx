@@ -10,5 +10,5 @@ export default [
   </Route>,
   <Route element={<DashboardHeaderWrapper />} key="main admin dashboard without nav">
     <Route path={ROUTES.newTour} Component={NewTour} />
-  </Route>
+  </Route>,
 ];

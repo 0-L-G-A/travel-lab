@@ -1,9 +1,5 @@
 const TourDetails = () => {
-  return (
-    <div>
-      TourDetails
-    </div>
-  );
+  return <div>TourDetails</div>;
 };
 
 export default TourDetails;

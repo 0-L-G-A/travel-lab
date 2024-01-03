@@ -11,4 +11,4 @@ const CheckMark = () => {
   );
 };
 
-export default CheckMark
+export default CheckMark;

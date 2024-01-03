@@ -18,7 +18,13 @@ export default function BlockBody({
   return (
     <div className={`${styles.blockBody} ${styles[mode]}`}>
       <div className={styles.radialGradient}></div>
-      <ContentCard tag={tag} mode={mode} title={title} picture={picture} description={description} />
+      <ContentCard
+        tag={tag}
+        mode={mode}
+        title={title}
+        picture={picture}
+        description={description}
+      />
     </div>
   );
 }

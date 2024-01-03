@@ -48,11 +48,7 @@ const Banner = () => {
               />
             </div>
             <div className={styles.bannerContentRightBrowserDiv}>
-              <img
-                src={BigLogo}
-                alt="browser"
-                className={styles.bannerContentRightBrowserImage}
-              />
+              <img src={BigLogo} alt="browser" className={styles.bannerContentRightBrowserImage} />
             </div>
           </div>
         </div>

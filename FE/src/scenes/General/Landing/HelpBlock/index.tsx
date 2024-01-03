@@ -17,7 +17,11 @@ export default function HelpBlock() {
       <LandingBlockTitle theme="light" titleCode={TitleCodes.HELP_BLOCK} />
       <HelpWrapper className={styles.helpWrapper}>
         {qa.map((item) => (
-          <Accordion key={item.id} label={t(item.question)} prefixComponent={() => <CountPrefix num={item.id} />}>
+          <Accordion
+            key={item.id}
+            label={t(item.question)}
+            prefixComponent={() => <CountPrefix num={item.id} />}
+          >
             <span>{t(item.answer)}</span>
           </Accordion>
         ))}

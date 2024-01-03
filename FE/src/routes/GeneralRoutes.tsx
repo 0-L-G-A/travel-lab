@@ -3,7 +3,12 @@ import { Route } from 'react-router-dom';
 
 import { Landing, MyProtocols, Profile, Settings } from 'scenes/General';
 import { SignIn, SignUp, PasswordReset, ForgotPassword } from 'scenes/Auth';
-import { DashboardNavBarWrapper, ProtectedRoutesWrapper, GuestRoutesWrapper, AuthRoutesWrapper } from 'scenes';
+import {
+  DashboardNavBarWrapper,
+  ProtectedRoutesWrapper,
+  GuestRoutesWrapper,
+  AuthRoutesWrapper,
+} from 'scenes';
 
 import { ROUTES } from './index';
 
@@ -16,7 +21,10 @@ export default [
       <Route path={ROUTES.myProtocols} Component={MyProtocols} />
     </Route>
   </Route>,
-  <Route element={<ProtectedRoutesWrapper loginRequired />} key="general protected dashboard routes">
+  <Route
+    element={<ProtectedRoutesWrapper loginRequired />}
+    key="general protected dashboard routes"
+  >
     <Route element={<DashboardNavBarWrapper />}>
       <Route path={ROUTES.profile} Component={Profile} />
       <Route path={ROUTES.settings} Component={Settings} />

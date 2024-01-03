@@ -1,7 +1,7 @@
 import Logo from './Logo';
 import Divider from './Divider';
 
-import styles from './index.module.scss'
+import styles from './index.module.scss';
 
 const DashboardNavPanel = ({ config = {} }) => {
   return (
@@ -10,7 +10,6 @@ const DashboardNavPanel = ({ config = {} }) => {
       <Divider />
 
       <Divider />
-
     </div>
   );
 };

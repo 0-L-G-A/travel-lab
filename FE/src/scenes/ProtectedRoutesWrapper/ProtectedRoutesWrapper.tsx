@@ -5,15 +5,15 @@ import { Outlet } from 'react-router-dom';
 import { ROLES, ROUTES } from 'routes';
 
 type UserDataType = {
-  email: string,
-  vin: string,
+  email: string;
+  vin: string;
 };
 
 const ProtectedRoutesWrapper = ({ loginRequired = false }) => {
   const navigate = useNavigate();
   const [authorized, setAuthorized] = useState(false);
   // const authorized = true;    // mocked state of auth for myProtocols page
-  const loggedIn = true;    // mocked state of auth for myProtocols page
+  const loggedIn = true; // mocked state of auth for myProtocols page
 
   const role = ROLES.mainAdmin;
 
@@ -25,13 +25,14 @@ const ProtectedRoutesWrapper = ({ loginRequired = false }) => {
       // CHECK FOR LOGIN FOR DASHBOARD ROUTES AFTER AUTH IMPLEMENTATION
     } else {
       const userData = localStorage.getItem('userData');
-      const { email, vin } : UserDataType = userData ? JSON.parse(userData) : {};
+      const { email, vin }: UserDataType = userData ? JSON.parse(userData) : {};
 
       // GET PROTOCOLS WITH EMAIL AND VIN
 
       console.log({ email, vin });
 
-      if (!authorized) { // IF PROTOCOLS NOT AVAILABLE
+      if (!authorized) {
+        // IF PROTOCOLS NOT AVAILABLE
         navigate(ROUTES.landing);
       }
     }
@@ -42,6 +43,6 @@ const ProtectedRoutesWrapper = ({ loginRequired = false }) => {
       <Outlet context={{ authorized, role }} />
     </>
   );
-}
+};
 
 export default ProtectedRoutesWrapper;

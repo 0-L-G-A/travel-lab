@@ -17,7 +17,7 @@ export const reviews: ICustomerReview[] = [
   },
   {
     review:
-      "My company new year corporate was topic to discuss for weeks after event. I was terified to pick up 1 day skiing trip to my employees, but wanted something special. It was hard to do, but we did it.",
+      'My company new year corporate was topic to discuss for weeks after event. I was terified to pick up 1 day skiing trip to my employees, but wanted something special. It was hard to do, but we did it.',
     rate: 5,
     company: {
       name: '1 day',

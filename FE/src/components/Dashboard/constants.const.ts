@@ -1,8 +1,6 @@
 import { ROLES } from 'routes/constants/roles.const';
 
-const navPanelBase = {
-
-}
+const navPanelBase = {};
 
 export const NAV_PANEL_CONFIG = {
   [ROLES.mainAdmin]: {
@@ -18,18 +16,14 @@ export const NAV_PANEL_CONFIG = {
   },
   [ROLES.admin]: {
     navPanelBase,
-
   },
   [ROLES.customer]: {
     navPanelBase,
-
   },
   [ROLES.dispatcher]: {
     navPanelBase,
-
   },
   [ROLES.driver]: {
     navPanelBase,
-
   },
-}
+};
