@@ -16,8 +16,8 @@ jobs:
       matrix:
         node-version: [18]
     defaults:
-        run:
-            working-directory: FE
+      run:
+        working-directory: FE
     steps:
       - uses: actions/checkout@v3
 
