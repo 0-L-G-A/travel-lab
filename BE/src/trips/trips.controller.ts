@@ -4,83 +4,78 @@ import { TripDTO, UpdateTripDTO } from './trips.dto';
 
 @Controller('trips') //http://localhost:8000/trips
 export class TripsController {
+  constructor(private readonly TripsService: TripsService) {}
 
-    constructor(
-        private readonly TripsService: TripsService
-    ){}
-
-    @Post()
-    async createStudent(@Res() response, @Body() tripDTO: TripDTO) {
+  @Post()
+  async createStudent(@Res() response, @Body() tripDTO: TripDTO) {
     try {
-        const newTrip = await this.TripsService.createTrip(tripDTO);
-        return response.status(HttpStatus.CREATED).json({
-            message: 'Trip has been created successfully',
-            newTrip,
-        });
+      const newTrip = await this.TripsService.createTrip(tripDTO);
+      return response.status(HttpStatus.CREATED).json({
+        message: 'Trip has been created successfully',
+        newTrip,
+      });
     } catch (err) {
-        return response.status(HttpStatus.BAD_REQUEST).json({
-            statusCode: 400,
-            message: 'Error: Trip not created!',
-            error: 'Bad Request'
-        });
+      return response.status(HttpStatus.BAD_REQUEST).json({
+        statusCode: 400,
+        message: 'Error: Trip not created!',
+        error: 'Bad Request',
+      });
     }
-    }
+  }
 
-    @Get()
-    async getTrips(@Res() response) {
+  @Get()
+  async getTrips(@Res() response) {
     try {
-        const tripsData = await this.TripsService.getAllTrips();
-        return response.status(HttpStatus.OK).json({
-            message: 'All trips data found successfully',
-            tripsData,
-        });
+      const tripsData = await this.TripsService.getAllTrips();
+      return response.status(HttpStatus.OK).json({
+        message: 'All trips data found successfully',
+        tripsData,
+      });
     } catch (err) {
-        return response.status(err.status).json(err.response);
+      return response.status(err.status).json(err.response);
     }
-    }
+  }
 
-    @Get('/:id')
-    async getTrip(@Res() response, @Param('id') tripId: string) {
+  @Get('/:id')
+  async getTrip(@Res() response, @Param('id') tripId: string) {
     try {
-        const existingTrip = await this.TripsService.getTripById(tripId);
-        return response.status(HttpStatus.OK).json({
-            message: 'Trip found successfully', 
-            existingTrip,
-        });
+      const existingTrip = await this.TripsService.getTripById(tripId);
+      return response.status(HttpStatus.OK).json({
+        message: 'Trip found successfully',
+        existingTrip,
+      });
     } catch (err) {
-        return response.status(err.status).json(err.response);
+      return response.status(err.status).json(err.response);
     }
-    }
+  }
 
-    @Put('/:id')
-    async updateStudent(
-        @Res() response, 
-        @Param('id') tripId: string,
-        @Body() updateTripDto: UpdateTripDTO
-    ) {
-        try {
-            const existingTrip = await this.TripsService.updateTrip(tripId, updateTripDto);
-            return response.status(HttpStatus.OK).json({
-                message: 'Trip has been successfully updated',
-                existingTrip,
-            });
-        } catch (err) {
-            return response.status(err.status).json(err.response);
-        }
+  @Put('/:id')
+  async updateStudent(
+    @Res() response,
+    @Param('id') tripId: string,
+    @Body() updateTripDto: UpdateTripDTO
+  ) {
+    try {
+      const existingTrip = await this.TripsService.updateTrip(tripId, updateTripDto);
+      return response.status(HttpStatus.OK).json({
+        message: 'Trip has been successfully updated',
+        existingTrip,
+      });
+    } catch (err) {
+      return response.status(err.status).json(err.response);
     }
+  }
 
-    @Delete('/:id')
-    async deleteTrip(@Res() response, @Param('id') tripId: string)
-    {
-        try {
-            const deletedTrip = await this.TripsService.deleteTrip(tripId);
-            return response.status(HttpStatus.OK).json({
-                message: 'Trip deleted successfully',
-                deletedTrip,
-            });
-        }catch (err) {
-            return response.status(err.status).json(err.response);
-        }
+  @Delete('/:id')
+  async deleteTrip(@Res() response, @Param('id') tripId: string) {
+    try {
+      const deletedTrip = await this.TripsService.deleteTrip(tripId);
+      return response.status(HttpStatus.OK).json({
+        message: 'Trip deleted successfully',
+        deletedTrip,
+      });
+    } catch (err) {
+      return response.status(err.status).json(err.response);
     }
-
+  }
 }

@@ -6,10 +6,12 @@ import { SignupSchema } from './signup.model';
 
 @Module({
   imports: [
-    MongooseModule.forFeature([{ 
-      name:"Signup",
-      schema: SignupSchema
-    }])
+    MongooseModule.forFeature([
+      {
+        name: 'Signup',
+        schema: SignupSchema,
+      },
+    ]),
   ],
   controllers: [SignupController],
   providers: [SignupService],

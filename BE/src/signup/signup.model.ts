@@ -3,14 +3,14 @@ import { Document } from 'mongoose';
 
 @Schema()
 export class Signup {
-    @Prop({unique: true})
-    username: String
-    @Prop({unique: true})
-    email: String
-    @Prop()
-    password: String
+  @Prop({ unique: true })
+  username: String;
+  @Prop({ unique: true })
+  email: String;
+  @Prop()
+  password: String;
 }
 
-export type SignupModel = Signup & Document
+export type SignupModel = Signup & Document;
 
-export const SignupSchema = SchemaFactory.createForClass(Signup)
+export const SignupSchema = SchemaFactory.createForClass(Signup);

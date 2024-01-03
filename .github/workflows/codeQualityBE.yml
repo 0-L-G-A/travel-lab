@@ -1,0 +1,27 @@
+name: Code Quality BE
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]
+    defaults:
+        run:
+            working-directory: BE
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: npm/action-setup@v2
+
+      - name: Use Node.js 
+        uses: actions/setup-node@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check formatting with Prettier
+        run: npx prettier . --check
