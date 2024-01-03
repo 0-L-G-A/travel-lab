@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { TripsController } from './trops.controller';
+import { TripsController } from './trips.controller';
 import { TripsService } from './trips.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { TripSchema } from './trips.model';

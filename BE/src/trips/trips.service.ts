@@ -21,7 +21,7 @@ export class TripsService {
         @InjectModel("trips") private tripModel: Model<TripModel>
     ){}
 
-    async trip(trip: Trip){
+    async createTrip(trip: Trip): Promise<TripModel> {
         const newTrip = new this.tripModel({
             name: await trip.name,
             direction: await trip.direction,
@@ -33,9 +33,9 @@ export class TripsService {
             transport: await trip.transport,
         })
         try{
-            await newTrip.save()
-        }catch(err){
-            console.log(err)
+            return newTrip.save() 
+        }catch(error){
+            throw new NotFoundException('Trip not created! Try to use unique names');
         }
     }
 

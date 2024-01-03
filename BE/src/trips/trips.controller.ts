@@ -10,8 +10,20 @@ export class TripsController {
     ){}
 
     @Post()
-    signup(@Body() tripDTO: TripDTO){
-        return this.TripsService.trip(tripDTO)
+    async createStudent(@Res() response, @Body() tripDTO: TripDTO) {
+    try {
+        const newTrip = await this.TripsService.createTrip(tripDTO);
+        return response.status(HttpStatus.CREATED).json({
+            message: 'Trip has been created successfully',
+            newTrip,
+        });
+    } catch (err) {
+        return response.status(HttpStatus.BAD_REQUEST).json({
+            statusCode: 400,
+            message: 'Error: Trip not created!',
+            error: 'Bad Request'
+        });
+    }
     }
 
     @Get()
@@ -19,7 +31,9 @@ export class TripsController {
     try {
         const tripsData = await this.TripsService.getAllTrips();
         return response.status(HttpStatus.OK).json({
-        message: 'All trips data found successfully',tripsData,});
+            message: 'All trips data found successfully',
+            tripsData,
+        });
     } catch (err) {
         return response.status(err.status).json(err.response);
     }
@@ -30,7 +44,9 @@ export class TripsController {
     try {
         const existingTrip = await this.TripsService.getTripById(tripId);
         return response.status(HttpStatus.OK).json({
-        message: 'Trip found successfully', existingTrip,});
+            message: 'Trip found successfully', 
+            existingTrip,
+        });
     } catch (err) {
         return response.status(err.status).json(err.response);
     }
